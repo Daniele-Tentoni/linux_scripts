@@ -67,14 +67,6 @@ sudo snap install eclipse --classic
 git config --local credential.helper cache
 git config credential.helper cache 9000 # 9000 are seconds before cache clear.
 
-echo "Install battery power improvements tools"
-# Install TLP fore manage battery improvements.
-sudo apt install tlp tlp-rdw
-
-# Install Powertop for battery tuning and other infos.
-sudo apt install powertop
-# sudo powertop-c # This may take 15 minutes to finish.
-
 echo "Install printer utilities"
 # sudo apt install hplip # Only for hp printers
 # sudo apt install lsb printer-driver-escpr # Only for Epson printers
@@ -92,3 +84,6 @@ else
 	echo "Tutto e' andato come previsto"
 	exit 0
 fi
+
+# Install vlc media player
+sudo snap install vlc
