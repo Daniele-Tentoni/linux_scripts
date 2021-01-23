@@ -6,5 +6,7 @@ if (( $EUID != 0 )); then
 	exit
 fi
 
+# Disable bluetooth service
 systemctl disable bluetooth.service
+# Stop bluetooth service
 systemctl stop bluetooth.service
