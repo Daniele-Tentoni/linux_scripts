@@ -1,0 +1,15 @@
+name: Test scripts
+on:
+  push:
+    branches: [ main ]
+jobs:
+  test:
+    name: Test scripts
+    runs-on: antonioparolisi/clean-popos:20.04
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - name: Push to Docker Hub
+        runs: |
+          echo "Run scripts"
+          ./installations/install_scripts.sh
