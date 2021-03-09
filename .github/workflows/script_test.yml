@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
-      - name: Push to Docker Hub
-        runs: |
+      - name: Execute install scripts
+        run: |
           echo "Run scripts"
           ./installations/install_scripts.sh
