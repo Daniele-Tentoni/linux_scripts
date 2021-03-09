@@ -1,5 +1,5 @@
 # Disable Ethernet
-From system76 Pop_Os! Battery Improvements article.
+From System76 Pop_Os! [Battery Improvements article](https://support.system76.com/articles/battery/#disable-ethernet).
 
 Use this script to disable ethernet. Doing it let you save more energy to do things you love.
 ## Disable ethernet by default

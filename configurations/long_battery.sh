@@ -8,4 +8,4 @@ echo "You wanna disable bluetooth?"
 ./disable_bluetooth.sh
 
 echo "You wanna disable ethernet?"
-./disable_ethernet.sh
+echo "Please follow instruction described in disable_ethernet.md file."
