@@ -26,7 +26,10 @@ sudo apt install snapd
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 sdk version
--> sdkman 5.0.0+51
+if [ `sdk version` -ne 'sdkman 5.0.0+51' ]; then
+	echo "Problems with SDKMAN setup"
+	exit 1
+fi
 
 echo "Procedo con l'installazione dei pacchetti base di programmazione e di utilita'"
 # Install the last default jdk and jre version.
@@ -87,3 +90,6 @@ fi
 
 # Install vlc media player
 sudo snap install vlc
+
+# Install system utilities
+sudo apt install neofetch
