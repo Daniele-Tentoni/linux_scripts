@@ -5,7 +5,7 @@ on:
 jobs:
   test:
     name: Test scripts
-    runs-on: hugojosefson/popos
+    runs-on: ubuntu:latest
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
