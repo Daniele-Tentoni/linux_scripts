@@ -12,7 +12,7 @@ else
 	echo "Hai chiesto un'installazione completa"
 fi
 
-echo "Procedo con l'aggiunta dei repo ad apt"
+echo "Add useful repositories to apt"
 sudo add-apt-repository ppa:linrunner/tlp
 
 echo "Procedo con l'aggiornamento delle sorgenti"
@@ -69,6 +69,9 @@ sudo snap install eclipse --classic
 # git config --global<propertyname>"<value>"
 git config --local credential.helper cache
 git config credential.helper cache 9000 # 9000 are seconds before cache clear.
+
+# Install or update the unix standard password manager
+sudo apt install pass
 
 echo "Install printer utilities"
 # sudo apt install hplip # Only for hp printers
